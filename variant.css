@@ -32,6 +32,7 @@ body::before {
 .section-heading { margin-bottom:15px; }
 .kicker { display:none; }
 .section-heading h2 { margin:0; font-family:inherit; font-size:1.25rem; font-weight:700; letter-spacing:-.02em; }
+.support-intro { margin:6px 0 0; color:var(--muted); font-size:.88rem; line-height:1.4; }
 .support-grid { gap:8px; }
 .support-card,.support-card.ach-primary,.support-card.kofi-card { min-height:70px; padding:12px 14px; border:1px solid var(--border); border-radius:10px; background:rgba(20,23,26,.9); box-shadow:none; }
 .support-card.kofi-primary { min-height:78px; border:2px solid #ff6865; }
@@ -41,6 +42,9 @@ body::before {
 .support-icon.bank { color:#fff; background:var(--green); }
 .support-copy strong { font-size:.92rem; }
 .card-label { color:var(--green); font-size:.57rem; }
+.availability { margin:18px 0 0; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:.84rem; line-height:1.5; }
+.availability strong { color:var(--text); font-weight:600; }
+.availability a { color:var(--accent); font-weight:600; text-underline-offset:3px; }
 footer { justify-content:flex-start; padding:28px 0; }
 .dialog-card { border-radius:12px; }
 @media (max-width:480px) {
