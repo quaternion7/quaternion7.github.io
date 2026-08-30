@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quaternion's links, free game mods, and optional support options.">
+  <meta name="theme-color" content="#0d0f11">
+  <meta property="og:title" content="Quaternion — Mods, links & support">
+  <meta property="og:description" content="Free game mods, projects, social links, and optional ways to support them.">
+  <title>Quaternion — Mods, links & support</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="variant.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header class="profile">
+      <div class="avatar" id="avatar" aria-hidden="true">Q</div>
+      <div class="identity">
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="display-name">Quaternion</h1>
+        <p class="bio" id="bio"></p>
+      </div>
+      <button class="icon-button" id="share-button" type="button" aria-label="Copy this page link" title="Copy this page link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .19.02.38.05.56L8.91 9.04A3 3 0 0 0 4 11.5a3 3 0 0 0 4.91 2.31l6.14 3.48A3 3 0 0 0 15 18a3 3 0 1 0 .91-2.15l-6.14-3.48A3.1 3.1 0 0 0 10 11.5c0-.3-.04-.59-.12-.86l6.09-3.45A3 3 0 0 0 18 8Z"/></svg>
+      </button>
+    </header>
+
+    <nav class="social-strip" id="social-strip" aria-label="Social profiles"></nav>
+
+    <section class="support-section" aria-labelledby="support-title">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Optional support</p>
+          <h2 id="support-title">Support my work.</h2>
+        </div>
+      </div>
+
+      <div class="support-grid">
+        <a class="support-card kofi-card kofi-primary" id="kofi-link" href="https://ko-fi.com/quaternion7" target="_blank" rel="noreferrer">
+          <span class="support-icon kofi-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M4.2 8.2h19.7v2h1.8c3.1 0 5.5 2.3 5.5 5.3s-2.4 5.3-5.5 5.3h-2.4a9.7 9.7 0 0 1-9.1 6.3h-.4a9.7 9.7 0 0 1-9.6-9.7V8.2Zm19.7 5v4.6h1.8c1.3 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3h-1.8Zm-14.5.7c-1.5 1.7-1.2 4.2.5 5.7l4.1 3.5 4.1-3.5c1.7-1.5 2-4 .5-5.7-1.2-1.4-3.3-1.5-4.6-.2-1.3-1.3-3.4-1.2-4.6.2Z"/></svg>
+          </span>
+          <span class="support-copy">
+            <span class="card-label">Recommended · quickest</span>
+            <strong>Tip with Ko-fi</strong>
+            <small>Card · Apple Pay · Google Pay</small>
+          </span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <button class="support-card" id="ach-button" type="button">
+          <span class="support-icon bank" aria-hidden="true">$</span>
+          <span class="support-copy">
+            <strong>Send USD by ACH</strong>
+            <small>Lowest fees · best for $25+</small>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+
+    </section>
+
+    <footer>
+      <span>Made by <span id="footer-name">Quaternion</span></span>
+    </footer>
+  </main>
+
+  <dialog id="ach-dialog" aria-labelledby="ach-title">
+    <form method="dialog" class="dialog-card">
+      <button class="dialog-close" value="close" aria-label="Close ACH instructions">×</button>
+      <p class="kicker">USD bank transfer</p>
+      <h2 id="ach-title">Pay by ACH</h2>
+      <p class="dialog-lead"><strong>Best for larger support:</strong> ACH avoids card processing fees when paying from a US bank. Banking details are shared privately to reduce abuse.</p>
+
+      <ol class="steps">
+        <li><span>1</span><p>Message <strong>@quaternion</strong> on Discord.</p></li>
+        <li><span>2</span><p>Ask for my private <strong>USD ACH details</strong>.</p></li>
+        <li><span>3</span><p>Send any amount as <strong>ACH</strong>, not Wire.</p></li>
+      </ol>
+
+      <div class="dialog-actions">
+        <button class="copy-button" id="discord-ach" type="button">Copy message & open Discord</button>
+        <button class="secondary-button" id="copy-request" type="button">Copy message only</button>
+      </div>
+      <p class="copied-message" id="copied-message" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
